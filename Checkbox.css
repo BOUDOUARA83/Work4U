@@ -1,0 +1,87 @@
+.main-title {
+    text-align: center; /* Center align the title */
+    color: #000; /* Set color of the title */
+    font-size: 30px; /* Set font size of the title */
+    font-weight: 400; /* Set font weight of the title */
+    /* Other styles as needed */
+}
+
+
+.checklist-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.checkbox__image {
+    width: 250px; /* Set desired width */
+    height: 250px; /* Set desired height */
+    margin-right: 20px; /* Set desired margin */
+    /* Other styles as needed */
+}
+
+.checkbox {
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 70px;
+}
+
+.checkbox__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.checkbox__box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    /* Add cloud background image here */
+    background-image: url('cloud.png'); /* Replace with your cloud background image */
+    background-size: cover;
+    border: 2px solid #9ACD32; /* Add green border */
+}
+
+.checklist-text {
+    padding-left: 40px;
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: bold; /* Add bold font weight */
+}
+
+/* Add styles for the button and form popup as needed */
+
+
+.checkbox__input:checked + .checkbox__box::before {
+    /* Add styles for the checked state of the checkbox, e.g. display a tick mark */
+    content: '\2713'; /* Unicode character for a tick mark */
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #9ACD32; /* Adjust color as needed */
+}
+
+.save-changes-container {
+    display: flex ;
+    justify-content: center;
+    margin-top:200px
+}
+
+.save-changes-button {
+    padding: 20x 20px;
+    background-color: #9acd32;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+
+}
+
